@@ -143,7 +143,7 @@ aracbilgileri(int c)
 
 			if(sec==1)
 			{
-				printf("\nZaten ›lk Sayfadasiniz.Secim Yapiniz :\n");while(atoi(secim)==1 || kontrol(secim)==0){
+				printf("\nZaten √ùlk Sayfadasiniz.Secim Yapiniz :\n");while(atoi(secim)==1 || kontrol(secim)==0){
 				scanf("%s",secim);};
 			}
 			//else if(sec==0){break;}
@@ -337,7 +337,7 @@ system("cls");
 
 			if(secim3==1)
 			{
-				printf("\nZaten ›lk Sayfadasiniz.Secim Yapiniz :\n");while(atoi(sec)==1 || kontrol(sec)==0){
+				printf("\nZaten √ùlk Sayfadasiniz.Secim Yapiniz :\n");while(atoi(sec)==1 || kontrol(sec)==0){
 				scanf("%s",sec);}
 
 			}
@@ -406,7 +406,7 @@ void duzenle(int c)
 	{
 		while(!feof(galeri))
 		{
-			fscanf(galeri,"%d\t%s\t%s\t%s\t%s\t%f\t%f\t%f\t\n",(sira+i),(ma+20*i),(se+20*i),(mo+20*i),(re+20*i),(yil+i),(km+i),(fiyat+i)); // eski bilgileri yaz˝yor buras˝ 
+			fscanf(galeri,"%d\t%s\t%s\t%s\t%s\t%f\t%f\t%f\t\n",(sira+i),(ma+20*i),(se+20*i),(mo+20*i),(re+20*i),(yil+i),(km+i),(fiyat+i)); // eski bilgileri yaz√Ωyor buras√Ω 
 			//printf("%s\t\t%s\t%s\t%s\t%.f\t%.f\t%.f\t\n",(ma+20*i),(se+20*i),(mo+20*i),(re+20*i),*(yil+i),*(km+i),*(fiyat+i));
 			i++;
 		}
@@ -435,7 +435,7 @@ void duzenle(int c)
 			fprintf(galeri,"%d\t%s\t%s\t%s\t%s\t%f\t%f\t%f\t\n",*(sira+i),strupr(ma+20*i),strupr(se+20*i),strupr(mo+20*i),strupr(re+20*i),*(yil+i),*(km+i),*(fiyat+i));
 			i++;
 		}
-		fflush(galeri); // yeni bilgilei eski biilgilerin ¸st¸ne yaz˝yorum; fflush sayesinde de esk
+		fflush(galeri); // yeni bilgilei eski biilgilerin √ºst√ºne yaz√Ωyorum; fflush sayesinde de esk
 		fclose(galeri);
 		printf("Arac Bilgileri Degistirildi.");
 	}else printf("Dosya Acilamadi.(8)");
@@ -777,7 +777,7 @@ int hesapla()
 	i++;
 }
 
-}else printf("Sayac dosyayi acilamadi.Lutfen program˝ yeniden baslatiniz.\n\n\n");
+}else printf("Sayac dosyayi acilamadi.Lutfen program√Ω yeniden baslatiniz.\n\n\n");
 fflush(galeri);
 fclose(galeri);
 free(bilgi);
